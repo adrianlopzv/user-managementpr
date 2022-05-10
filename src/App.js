@@ -53,7 +53,7 @@ class App extends Component {
     // = con this.state damos referencia de donde esta la propiedad del state
     const valoresIniciales = usuarioSeleccionado && data.find(x => x.id === usuarioSeleccionado)
     return (
-      <div className="main-container">
+      <div>
         {ruta === 'lista' && <ViewList 
         nuevoUsuario={this.nuevoUsuario}
         handleClick={this.seleccionaUsuario}

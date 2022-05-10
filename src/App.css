@@ -17,8 +17,10 @@ html {
 }
 
 .main-container { 
-    width: 320px;
+    width: 360px;
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -53,6 +55,43 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+}
+
+.user-container {
+    width: auto;
+    height: auto; /* CAMBIAR a 65px */
+    border-bottom: 1px solid #F5F5F5;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon {
+    background-image: url('./icons8-user-64.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.data-container {
+    height: auto;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.data-container .user-name {
+    margin: 0;
+    padding: 0;
+}
+
+.data-container:nth-child(1) {
+    color: red;
 }
 
 .edit-button {

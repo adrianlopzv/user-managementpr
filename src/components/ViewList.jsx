@@ -7,7 +7,7 @@ export default class ViewList extends Component {
         const { data, handleClick, nuevoUsuario } = this.props
         
         return (
-            <div>
+            <div className="main-container">
             <Cabecera nuevoUsuario={nuevoUsuario}/>
             <Lista data={data} handleClick={handleClick} />
             </div>
