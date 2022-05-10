@@ -90,10 +90,6 @@ ul {
     padding: 0;
 }
 
-.data-container:nth-child(1) {
-    color: red;
-}
-
 .edit-button {
     font-style: normal;
     font-weight: 600;
