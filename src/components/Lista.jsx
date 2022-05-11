@@ -15,7 +15,7 @@ export default class Lista extends Component {
                       <p className='user-icon'></p>
                       <div className='data-container'>
                         <p className='user-name'>{x.name}</p>
-                        <p>{x.email}</p>
+                        <p className='user-email'>{x.email}</p>
                       </div>
                       <p onClick={this.handleClick(x.id)} className="edit-button">Editar</p>
                   </li>)} 

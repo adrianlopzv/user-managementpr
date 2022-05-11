@@ -2,7 +2,6 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     margin: 0;
     background: #f5f5f5;
@@ -12,7 +11,7 @@ html {
     --main-black: #000;
     --secondary-gray: #d9d9d9;
     --icon-gray: #c0c0c0;
-    --edit-blue: #3A6EA5;
+    --edit-blue: #bde0fe;
     --main-button: #FF7A00;
 }
 
@@ -26,6 +25,7 @@ html {
 }
 
 .users-header {
+    font-family: 'Inter';
     display: flex;
     padding-left: 30px;
     flex-direction: column;
@@ -59,9 +59,9 @@ ul {
 
 .user-container {
     width: auto;
-    height: auto; /* CAMBIAR a 65px */
-    border-bottom: 1px solid #F5F5F5;
-    padding: 5px 10px;
+    height: 6rem; /* CAMBIAR a 65px */
+    border-bottom: 2px solid #F5F5F5;
+    padding: 5px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,12 +72,13 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
 }
 
 .data-container {
+    font-family: 'Inter';
     height: auto;
     width: 25rem;
     display: flex;
@@ -86,15 +87,31 @@ ul {
 }
 
 .data-container .user-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0;
+    padding-bottom: 0.4rem;
+}
+
+.data-container .user-email {
     margin: 0;
     padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    color: #bdbdbd;
 }
 
 .edit-button {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--edit-blue);
+    cursor: pointer;
+}
+.edit-button:hover{
+    color: #3A6EA5;
     cursor: pointer;
 }
 
