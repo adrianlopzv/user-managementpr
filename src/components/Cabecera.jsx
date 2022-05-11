@@ -8,7 +8,7 @@ export default class Cabecera extends Component {
             <header className='users-header'>
                 <h2 className='users-title'>User list</h2>
                 <h6 className='user-subt'>User management</h6>
-                <button onClick={nuevoUsuario}>Nuevo Usuario</button>
+                <button className='addUser-button' onClick={nuevoUsuario}>Add User</button>
             </header>
         ) 
     }

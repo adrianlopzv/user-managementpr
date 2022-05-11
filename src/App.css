@@ -29,8 +29,9 @@ html {
     display: flex;
     padding-left: 30px;
     flex-direction: column;
-    height: 120px;
+    height: 100px;
     width: 100%;
+    padding-top: 10px;
 }
 
 .users-title {
@@ -113,6 +114,27 @@ ul {
 .edit-button:hover{
     color: #3A6EA5;
     cursor: pointer;
+}
+
+.addUser-button {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    font-family: 'Inter';
+    font-size: 1.4rem;
+    height: 35px;
+    width: 110px;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0.2rem 1.5rem rgba(143, 142, 142, 0.15)!important;
+    background: var(--main-button);
+    cursor: pointer;
+}
+.addUser-button:hover {
+    background: #E97000;
 }
 
 /* @media screen and (max-width: 360px) {
