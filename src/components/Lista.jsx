@@ -11,13 +11,13 @@ export default class Lista extends Component {
         return(
             <ul>
                 {data.map(x => 
-                  <li className='user-container' key={x.id}>
-                      <p className='user-icon'></p>
-                      <div className='data-container'>
-                        <p className='user-name'>{x.name}</p>
-                        <p className='user-email'>{x.email}</p>
+                  <li className='list__container' key={x.id}>
+                      <i className='list__icon'></i>
+                      <div className='list__div'>
+                        <p className='list__name'>{x.name}</p>
+                        <p className='list__email'>{x.email}</p>
                       </div>
-                      <p onClick={this.handleClick(x.id)} className="edit-button">Editar</p>
+                      <p onClick={this.handleClick(x.id)} className="list__btn">Editar</p>
                   </li>)} 
                   {/* <span className='user-icon'></span> */}
             </ul>

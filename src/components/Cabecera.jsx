@@ -5,10 +5,10 @@ export default class Cabecera extends Component {
     render() {
         const { nuevoUsuario } = this.props
         return (
-            <header className='users-header'>
-                <h2 className='users-title'>User list</h2>
-                <h6 className='user-subt'>User management</h6>
-                <button className='addUser-button' onClick={nuevoUsuario}>Add User</button>
+            <header className='header__main'>
+                <h2 className='header__title'>User list</h2>
+                <h6 className='header__subtitle'>User management</h6>
+                <button className='header__btn--add-user' onClick={nuevoUsuario}>Add User</button>
             </header>
         ) 
     }
