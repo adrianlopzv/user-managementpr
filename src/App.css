@@ -63,16 +63,13 @@ ul {
 }
 
 .list__container {
-    width: 36rem;
     height: 6rem;
     background-color: #fff;
     padding: 5px 15px;
     margin-left: 3px;
     margin-bottom: 3px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    align-self: center;
 }
 
 .list__icon {
@@ -143,9 +140,8 @@ ul {
     background: #E97000;
 }
 
-/* @media screen and (max-width: 360px) {
-    .main-container {
-        width: 320px;
-        background-color: #FF7A00;
+@media screen and (max-width: 390px) {
+    .list__container {
+        width: 100vw;
     }
-} */
+}
