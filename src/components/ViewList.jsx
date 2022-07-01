@@ -10,7 +10,7 @@ export default class ViewList extends Component {
             <div className="main-container">
             <Cabecera nuevoUsuario={nuevoUsuario}/>
             <Lista data={data} handleClick={handleClick} />
-            <button className='header__btn--add-user' onClick={nuevoUsuario}>Add User</button>
+            <button className='main-btn btn__add-user' onClick={nuevoUsuario}>Add User</button>
             </div>
         )
     }

@@ -7,6 +7,11 @@ html {
     background: #f5f5f5;
 }
 
+body {
+    overflow-x: hidden; 
+    /* solucion magica */
+}
+
 :root {
     --main-black: #000;
     --secondary-gray: #d9d9d9;
@@ -27,12 +32,11 @@ html {
 .header__main {
     font-family: 'Inter';
     display: flex;
-    padding-left: 30px;
     flex-direction: column;
     height: 100px;
     width: 100vw;
-    padding-top: 10px;
     background-color: #fff;
+    padding: 0;
 }
 
 .header__title {
@@ -40,7 +44,7 @@ html {
    font-weight: 500;
    font-size: 2.8rem;
    line-height: 10px;
-   margin: 34px 0px 10px;
+   margin: 45px 0px 10px 30px
 }
 
 .header__subtitle {
@@ -49,6 +53,7 @@ html {
     font-size: 1.6rem;
     color: var(--secondary-gray);
     margin: 0;
+    padding-left: 3.2rem;
 }
 
 ul {
@@ -119,10 +124,7 @@ ul {
     cursor: pointer;
 }
 
-.header__btn--add-user {
-    position: fixed;
-    bottom: 50px;
-    right: 40px;
+.main-btn{
     font-family: 'Inter';
     font-size: 1.4rem;
     height: 35px;
@@ -136,8 +138,31 @@ ul {
     background: var(--main-button);
     cursor: pointer;
 }
-.header__btn--add-user:hover {
+.main-btn:hover {
     background: #E97000;
+}
+
+.btn__add-user {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+}
+
+.form__div-main {
+    height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.form__main {
+    width: 360px;
+    height: 92vh;
+    background-color: #fff;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3rem;
 }
 
 @media screen and (max-width: 390px) {

@@ -53,7 +53,9 @@ export default class UserForm extends Component {
         const { errors } = this.state
         const { valoresIniciales } = this.props
         return (
-            <form onSubmit={this.handleSubmit}>
+           <div className="form__div-main"> 
+            <form className="form__main" onSubmit={this.handleSubmit}>
+                <h2 className='header__title'>User data</h2>
                 <input defaultValue={valoresIniciales.name} placeholder="Nombre" name="name" onChange={this.handleChange}/>
                 {errors.name && <p>{errors.name}</p>}
                 <input defaultValue={valoresIniciales.email} placeholder="Email" name="email" onChange={this.handleChange}/>
@@ -62,6 +64,7 @@ export default class UserForm extends Component {
                 {errors.name && <p>{errors.website}</p>}
                 <input  type="submit" value="Enviar" />
             </form>
+            </div>
         )
     }
 } 
